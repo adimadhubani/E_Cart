@@ -26,11 +26,11 @@ const Layout = ({ children,title,description,keywords,author }) => {
   );
 };
 // used for default title sco we can also pass each and every page title
-Layout.defaultProps={
-  title:"Ecommerce app-shop now",
-  description:"mern stack project",
-  keywords:"mern,react,mongodb,node",
-  author:"Aditya"
-}
+// Layout.defaultProps={
+//   title:"Ecommerce app-shop now",
+//   description:"mern stack project",
+//   keywords:"mern,react,mongodb,node",
+//   author:"Aditya"
+// }
 
 export default Layout;

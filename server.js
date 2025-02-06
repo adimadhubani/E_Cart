@@ -13,7 +13,8 @@ dotenv.config();
 //databse config
 connectDB();
 
-app.use(cors)
+
+app.use(cors());
 app.use(express.json());
 app.use(morgan("dev"));
 
