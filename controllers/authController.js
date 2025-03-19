@@ -70,6 +70,7 @@ export const registerController = async (req, res) => {
 export const loginController = async (req, res) => {
   try {
     const { email, password } = req.body;
+    console.log("login request received",req.body);
     //validation
     if (!email || !password) {
       return res.status(404).send({
@@ -79,6 +80,7 @@ export const loginController = async (req, res) => {
     }
     //check user
     const user = await userModel.findOne({ email });
+    console.log("login request received",user);
     if (!user) {
       return res.status(404).send({
         success: false,
