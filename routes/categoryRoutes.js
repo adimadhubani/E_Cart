@@ -13,7 +13,10 @@ const router = express.Router();
 //routes
 // create category
 router.post(
-  "/create-category",requireSignIn,isAdmin,createCategoryController
+  "/create-category",
+  requireSignIn,
+  isAdmin,
+  createCategoryController
 );
 
 //update category
